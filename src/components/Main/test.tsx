@@ -7,7 +7,7 @@ describe('<Main />', () => {
     render(<Main />)
 
     expect(
-      screen.getByRole('heading', { name: /Titulo teste/i })
+      screen.getByRole('heading', { name: /React - Boilerplate/i })
     ).toBeInTheDocument()
   })
 
@@ -15,5 +15,14 @@ describe('<Main />', () => {
     const { container } = render(<Main />)
 
     expect(container.firstChild).toMatchSnapshot()
+  })
+
+  it('Should render the colors correctly', () => {
+    const { container } = render(<Main />)
+
+    expect(container.firstChild).toHaveStyle({
+      'background-color': '#003ecb',
+      color: '#fff'
+    })
   })
 })
