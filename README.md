@@ -18,6 +18,12 @@ This project uses lot of stuff as:
 
 ## Getting Started
 
+Create a new project using this boilerplate as an example:
+
+```bash
+yarn create next-app -e https://github.com/alangabrielbs/boilerplate-next
+```
+
 First, run the development server:
 
 ```bash
